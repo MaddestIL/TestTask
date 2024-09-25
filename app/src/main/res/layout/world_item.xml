@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_38"
+    android:layout_width="328dp"
+    android:layout_height="72dp"
+    android:clipToOutline="true"
+    android:background="@drawable/world_item_background"
+    >
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="86dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/label"
+        android:textAppearance="@style/label"
+        android:lineSpacingExtra="5sp"
+        android:translationY="-2.28sp"
+        android:gravity="top"
+        />
+    <!--
+    Font family: Roboto
+    Line height: 28sp
+    (identical to box height)
+    translationY compensates for the line height adjustment of text
+    -->
+
+    <!-- styles.xml -->
+
+
+    <!-- strings.xml -->
+    <string name="label">
+        \u00d0\u009c\u00d1\u0091\u00d1\u0080\u00d1\u0082\u00d0\u00b2\u00d0\u00b0\u00d1\u008f
+    </string>
+
+
+
+
+
+
+</RelativeLayout>
+
+    <!-- drawable/frame_38.xml -->
+
