@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">TestTask</string>
-    <string name="label"> </string>
+    <string name="header">Клеточное наполнение</string>
+    <string name="title_alive">Живая</string>
+    <string name="description_alive">и шевелится!</string>
+    <string name="title_dead">Мертвая</string>
+    <string name="description_dead">или прикидывается</string>
+    <string name="produce_button">Сотворить</string>
 </resources>
