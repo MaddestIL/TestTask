@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -39,6 +40,8 @@ android {
 
 dependencies {
 
+    implementation ("com.google.dagger:dagger:2.52")
+    kapt ("com.google.dagger:dagger-compiler:2.52")
     implementation (libs.androidx.recyclerview)
     implementation (libs.github.glide)
     implementation(libs.androidx.core.ktx)

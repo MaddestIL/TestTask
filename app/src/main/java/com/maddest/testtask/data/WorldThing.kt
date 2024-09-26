@@ -1,4 +1,4 @@
-package com.maddest.testtask.models
+package com.maddest.testtask.data
 
 data class WorldThing(
     val title: String = "",

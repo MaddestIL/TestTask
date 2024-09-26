@@ -1,14 +1,12 @@
-package com.maddest.testtask
+package com.maddest.testtask.presentation
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.maddest.testtask.R
 import com.maddest.testtask.databinding.ActivityMainBinding
-import com.maddest.testtask.models.WorldThing
+import com.maddest.testtask.data.WorldThing
 
 class MainActivity : AppCompatActivity() {
 

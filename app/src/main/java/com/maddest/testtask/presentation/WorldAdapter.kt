@@ -1,4 +1,4 @@
-package com.maddest.testtask
+package com.maddest.testtask.presentation
 
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.maddest.testtask.databinding.WorldItemBinding
-import com.maddest.testtask.models.WorldThing
+import com.maddest.testtask.data.WorldThing
 
 class WorldAdapter(private val itemsList: ArrayList<WorldThing>): RecyclerView.Adapter<WorldAdapter.WorldViewHolder>() {
 
