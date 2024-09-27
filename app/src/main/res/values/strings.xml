@@ -6,4 +6,6 @@
     <string name="title_dead">Мертвая</string>
     <string name="description_dead">или прикидывается</string>
     <string name="produce_button">Сотворить</string>
+    <string name="title_creature">Жизнь</string>
+    <string name="description_creature">Ку-ку!</string>
 </resources>

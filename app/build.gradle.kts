@@ -1,7 +1,10 @@
+import org.jetbrains.kotlin.fir.declarations.builder.buildScript
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.dagger.hilt)
 }
 
 android {
@@ -29,6 +32,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -40,8 +44,20 @@ android {
 
 dependencies {
 
-    implementation ("com.google.dagger:dagger:2.52")
-    kapt ("com.google.dagger:dagger-compiler:2.52")
+    //dagger
+    implementation (libs.dagger)
+    kapt (libs.dagger.compiler)
+
+    //hilt
+    implementation (libs.dagger.hilt.android)
+    kapt (libs.kapt.dagger.hilt.compiler)
+
+    // Lifecycle
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+    implementation (libs.androidx.fragment.ktx)
+
     implementation (libs.androidx.recyclerview)
     implementation (libs.github.glide)
     implementation(libs.androidx.core.ktx)
@@ -52,4 +68,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(kotlin("script-runtime"))
 }
