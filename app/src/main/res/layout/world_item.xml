@@ -22,16 +22,17 @@
         android:id="@+id/titleTextView"
         android:layout_width="86dp"
         android:layout_height="28dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="72dp"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
         android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:lineSpacingExtra="5sp"
         android:text=""
         android:textAppearance="@style/title"
-        android:lineSpacingExtra="5sp"
-        android:translationY="-2.28sp"
-        android:gravity="top"
-        />
+        android:translationY="-2.28sp" />
 
     <TextView
         android:id="@+id/descriptionTextView"
